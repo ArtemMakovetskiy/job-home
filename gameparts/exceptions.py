@@ -7,5 +7,3 @@ class FieldIndexError(IndexError):
         message='Введено значение за границами игрового поля!'  
     ):
         super().__init__(message)
-
-raise FieldIndexError
