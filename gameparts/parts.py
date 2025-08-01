@@ -30,13 +30,16 @@ class Board:
             if (all([self.board[i][j] == player for j in range(self.field_size)]) or
                     all([self.board[j][i] == player for j in range(self.field_size)])):
                 return True
-    
+         
+      
         # Проверка по диагоналям
         if (all([self.board[i][i] == player for i in range(self.field_size)]) or
                 all([self.board[i][self.field_size - 1 - i] == player for i in range(self.field_size)])):
             return True
     
         return False
+    
+    
     
     def __str__(self):
         return (
